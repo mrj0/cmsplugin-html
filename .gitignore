@@ -1,1 +1,4 @@
 *~
+build/
+cmsplugin_html.egg-info/
+dist/
