@@ -3,7 +3,7 @@ setup(
     name='cmsplugin-html',
     version= '0.1',
     description='A very simple plugin for django-cms 2 for plain html',
-    long_description=open('README').read(),
+    long_description=open('README.md').read(),
     #author='',
     #author_email='X',
     maintainer='mrj0',
