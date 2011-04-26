@@ -1,4 +1,5 @@
 from django.utils.translation import ugettext as _
+from django.template import Template
 
 from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
@@ -15,7 +16,7 @@ class HtmlPlugin(CMSPluginBase):
 
     def render(self, context, instance, placeholder):
         context.update({
-            'body': mark_safe(instance.body),
+            'body': mark_safe(Template(instance.body).render(context)),
             'object': instance,
             'placeholder': placeholder
         })
