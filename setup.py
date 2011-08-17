@@ -15,7 +15,9 @@ setup(
     maintainer_email='mike@publicstatic.net',
     url='https://github.com/mrj0/cmsplugin-html',
     license='MIT',
-    packages=find_packages(),
+    packages=['cmsplugin_html'],
+    package_dir={'cmsplugin_html': 'cmsplugin_html'},
+    package_data={'cmsplugin_html': ['templates/cmsplugin_html/*.html']},
     classifiers=[
         'Development Status :: 1 - Alpha',
         'Environment :: Web Environment',
